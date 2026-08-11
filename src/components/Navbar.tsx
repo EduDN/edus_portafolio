@@ -19,8 +19,8 @@ interface NavLinkItem {
 }
 
 const NAV_LINKS: NavLinkItem[] = [
-  { id: 'skills',     labelKey: 'nav.skills'     },
   { id: 'experience', labelKey: 'nav.experience' },
+  { id: 'skills' , labelKey: 'nav.skills'},
   { id: 'projects',   labelKey: 'nav.projects'   },
   { id: 'talks',      labelKey: 'nav.talks'       },
 ]

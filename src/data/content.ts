@@ -78,7 +78,7 @@ export const workExperiences: WorkExperience[] = [
   {
     company: 'IBM',
     roleKey: 'role.deliveryConsultant',
-    period: 'Nov 2024 – Present',
+    period: 'Nov 2024 – August 2026',
     type: 'full-time',
     bullets: [
       'Developed and implemented Generative AI solutions for Supply Chain optimization — metrics control, inventory control and last mile delivery.',
