@@ -19,6 +19,7 @@ interface NavLinkItem {
 }
 
 const NAV_LINKS: NavLinkItem[] = [
+  { id: 'skills',     labelKey: 'nav.skills'     },
   { id: 'experience', labelKey: 'nav.experience' },
   { id: 'projects',   labelKey: 'nav.projects'   },
   { id: 'talks',      labelKey: 'nav.talks'       },
@@ -35,7 +36,7 @@ export default function Navbar(): JSX.Element {
       <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between flex-wrap gap-3">
         {/* Site logo / name */}
         <span className="text-white font-bold text-lg select-none" aria-label="Eduardo Domínguez Navarrete">
-          Eduardo Domínguez
+          Eduardo Domínguez Navarrete
         </span>
 
         {/* Navigation links */}

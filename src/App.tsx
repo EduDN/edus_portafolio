@@ -4,6 +4,7 @@ import HeroSection from './components/HeroSection'
 import WorkExperienceSection from './components/WorkExperienceSection'
 import ProjectsSection from './components/ProjectsSection'
 import TalksSection from './components/TalksSection'
+import SkillsSection from './components/SkillsSection'
 import Footer from './components/Footer'
 
 export default function App(): JSX.Element {
@@ -14,6 +15,7 @@ export default function App(): JSX.Element {
         <main>
           <HeroSection />
           <WorkExperienceSection />
+          <SkillsSection />
           <ProjectsSection />
           <TalksSection />
         </main>

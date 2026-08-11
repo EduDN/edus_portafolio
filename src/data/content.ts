@@ -1,3 +1,56 @@
+export interface SkillCategory {
+  titleKey: string
+  skills: string[]
+}
+
+export const skillCategories: SkillCategory[] = [
+  {
+    titleKey: 'skills.cloud',
+    skills: [
+      'Amazon Bedrock',
+      'Amazon Sagemaker AI',
+      'AWS',
+      'IBM Cloud',
+      'Google Cloud Platform',
+      'Gemini',
+      'OpenShift',
+      'Docker',
+      'Kubernetes',
+      'Watsonx.ai',
+      'Vertex AI'
+    ],
+  },
+  {
+    titleKey: 'skills.languages',
+    skills: [
+      'Python',
+      'TypeScript',
+      'JavaScript',
+      'SQL',
+      'HTML / CSS',
+      '.NET / ASP',
+    ],
+  },
+  {
+    titleKey: 'skills.frameworks',
+    skills: [
+      'LangChain',
+      'LangGraph',
+      'AWS SDK',
+      'Google ADK',
+      'IBM ADK',
+      'React',
+      'Angular',
+      'Node.js',
+      'FastAPI',
+      'Pandas',
+      'Matplotlib',
+      'Spark',
+      'Tableau',
+    ],
+  },
+]
+
 export interface WorkExperience {
   company: string
   roleKey: string        // translation key for job title
@@ -29,12 +82,12 @@ export const workExperiences: WorkExperience[] = [
     type: 'full-time',
     bullets: [
       'Developed and implemented Generative AI solutions for Supply Chain optimization — metrics control, inventory control and last mile delivery.',
-      'Created AI agents with ADK to interact with databases using LLMs for data-driven decision making.',
+      'Created AI agents with ADK (AWS and IBM) to interact with databases using LLMs for data-driven decision making.',
       'Processed large volumes of data for cleaning, analysis and dashboard creation using Tableau, Python, Pandas and SQL with DB2.',
       'Built an LLM classification system for user feedback using cosine similarity for semantic evaluation.',
       'Deployed and managed proofs of concept in local OpenShift environments (Single Node); performed container troubleshooting.',
       'Managed a team of 3 developers — onboarding, documentation and project implementations.',
-      'Delivered workshops on GenAI, agent creation using ADK, Spark and data pipelines.',
+      'Delivered workshops on GenAI, agent creation using ADK (IBM), Spark and data pipelines.',
     ],
   },
   {
@@ -115,6 +168,12 @@ export const projects: Project[] = []
 
 export const talks: Talk[] = [
   {
+    titleKey: 'talk.colgate.title',
+    organizationKey: 'Colgate-Palmolive',
+    type: 'workshop',
+    description: 'Led an enterprise enablement session on the transition to Autonomous AI Agents, translating technical frameworks (Google ADK, Gemini Spark, MCP) into actionable, secure business strategies for non-technical stakeholders while reinforcing data governance and human-in-the-loop protocols.',
+  },
+  {
     titleKey: 'talk.nubank.title',
     organizationKey: 'Nu Bank',
     type: 'talk',
@@ -155,11 +214,5 @@ export const talks: Talk[] = [
     organizationKey: 'IBM',
     type: 'workshop',
     description: 'Client-facing GenAI workshops on agent creation with ADK and data pipeline automation using Spark.',
-  },
-  {
-    titleKey: 'talk.consulca.title',
-    organizationKey: 'CONSULCA',
-    type: 'workshop',
-    description: 'Training sessions for Latin American institutions on applying AI to urban mobility — traffic prediction, delay modeling and smart signal systems.',
-  },
+  }
 ]
